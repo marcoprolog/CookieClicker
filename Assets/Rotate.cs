@@ -15,6 +15,6 @@ public class Rotate : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(3, 7, 10) * speed * Time.deltaTime);
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        //transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
