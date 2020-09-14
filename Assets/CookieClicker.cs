@@ -38,18 +38,21 @@ public class CookieClicker : MonoBehaviour
             counter = counter + 1;
             //counter += 1;
             //counter++; //++counter;
+
+            // = is assignment
+            // == is comparison
+            if (counter == 10)
+            {
+                Debug.Log("You got 10!");
+                GetComponent<Worker>().enabled = true;
+            }
         }
         else
         {
             //execute when the condition is false
         }
 
-        // = is assignment
-        // == is comparison
-        if (counter == 10)
-        {
-            Debug.Log("You got 10!");
-        }
+        
     }
 
     //access_modifier return_type name( inputs )
